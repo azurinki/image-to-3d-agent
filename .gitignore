@@ -1,0 +1,35 @@
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Environment & Secrets
+.env
+.env.*
+
+# Dependencies & Build Caches
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Local Working Projects, Examples & Generated 3D Outputs
+projects/
+input/
+examples/
+out/
+src/
+tmp/
+.quad_*.png
+*.glb
+*.stl
+*.3mf
+*.obj
+*.scad
+*.step

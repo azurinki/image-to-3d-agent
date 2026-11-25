@@ -1,0 +1,25 @@
+{
+  "name": "image-to-3d",
+  "version": "3.0.0",
+  "description": "100% local, zero-signup Image-to-3D agent plugin & portable skill: Manifold-3D parametric CAD, pure-Node 2.5D reliefs/thin-shell masks, and optional local GPU Hunyuan3D-2mini volumetric 3D.",
+  "author": {
+    "name": "Kimhour (Azurinki)",
+    "url": "https://3d.azurinki.com"
+  },
+  "repository": "https://github.com/TangPhuHour/image-to-3d-agent",
+  "license": "MIT",
+  "keywords": [
+    "image-to-3d",
+    "cad",
+    "manifold-3d",
+    "3d-printing",
+    "3mf",
+    "stl",
+    "openscad",
+    "hunyuan3d",
+    "local-ai"
+  ],
+  "skills": [
+    "./"
+  ]
+}

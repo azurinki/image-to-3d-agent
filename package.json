@@ -1,0 +1,20 @@
+{
+  "name": "image-to-3d-agent",
+  "version": "3.0.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "100% Local, Zero-Signup, Zero-Install Image-to-3D Skill & Repo for Claude Code, Antigravity (AGY), Cursor & Codex — Manifold-3D Parametric CAD + Agent Depth-Map Curved Wearable Mask & Relief Sculpting.",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "doctor": "node scripts/cad-engine.mjs doctor",
+    "init": "node scripts/cad-engine.mjs init",
+    "sculpt": "node scripts/cad-engine.mjs sculpt",
+    "build": "node scripts/cad-engine.mjs build",
+    "setup-gpu": "node scripts/cad-engine.mjs setup-gpu",
+    "generate": "node scripts/cad-engine.mjs generate",
+    "finish": "node scripts/cad-engine.mjs finish",
+    "list": "node scripts/cad-engine.mjs list",
+    "resume": "node scripts/cad-engine.mjs resume",
+    "help": "node scripts/cad-engine.mjs --help"
+  }
+}

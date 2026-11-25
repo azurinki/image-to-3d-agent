@@ -1,0 +1,17 @@
+---
+description: 100% local, zero-signup Image-to-3D agent workflow (Manifold-3D CAD, 2.5D reliefs/masks, and optional local GPU Hunyuan3D-2mini volumetric 3D)
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Image to 3D Agent Rules (Cursor)
+
+Follow `SKILL.md` and `references/image-recognition-and-realization.md` whenever the user attaches a reference image or asks to create, sculpt, hollow, resize, or export a 3D model (`.3mf`, `.stl`, `.obj`, `.scad`, `.step`):
+
+1. **Inspect Before Building:** Run the 4-pass visual deconstruction in `references/image-recognition-and-realization.md` (subject archetype, camera/style traps, mm scale anchors, unseen back/volume anatomy). Act immediately on clear intent; ask at most 2–3 crisp multiple-choice questions only when the target physical form is genuinely ambiguous.
+2. **Route to the Right Local Track:**
+   - **Track A (`init` + `build model.mjs`, Pure Node.js):** Exact-mm packaging, boxes, stands, mounts, enclosures, vases, lamps, mechanical parts.
+   - **Track B (`sculpt --mode relief|mask`, Pure Node.js):** Medallions, coins, wall reliefs, lithophanes, and sleek thin-shell flat-front masks.
+   - **Track C (`generate` via local GPU `Hunyuan3D-2mini` → `finish`, or `finish <mesh>`):** Full 360° organic objects with real inward cavities, overhangs, flaring ears, snouts, or limbs. Never feed flat 2D vector art raw into `generate` (convert to a 3/4 matte-clay render first if image-gen is available).
+3. **Verify Visually & Mechanically:** Open `projects/<slug>/preview.png` (ISO 3/4, FRONT, RIGHT, BACK) and confirm `watertightAll: true` plus real volumetric indentation/expansion before declaring done. Run `npm test` after any engine change.
